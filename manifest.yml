@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: IBMCalendario
+  host: IBMCalendar
+  disk_quota: 1024M
+  services:
+  - ClearDB MySQL Database-lo
+  buildpack: https://github.com/cloudfoundry/php-buildpack.git
